@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+
+<body>
+  <!---Navbar-->
+  <nav class="navbar navbar-expand-lg bg-white shadow sticky-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <a class="navbar-brand">
+          <img src="./Assets/images/Zlogo.PNG" height=100px width=200px>
+        </a>
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: auto; margin-right: auto;">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#reservation">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#blog">Blog</ a>
+          </li>
+        </ul>
+
+        <a href="#" class="btn btn-brand">Place an order</a>
+      </div>
+    </div>
+  </nav>
+
+  <!---slider-->
+
+  <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item text-center vh-100 bg-cover active slide-1">
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h6 class="text-white"> WELCOME TO ZYKAA</h6>
+              <h4 class="display-1 fw-bold text-white">Nice to meet you.</h4>
+              <a href="#" class="btn btn-brand">Reservation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item text-center bg-cover vh-100 active slide-2">
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h6 class="text-white"> WELCOME TO ZYKAA</h6>
+              <h4 class="display-1 fw-bold text-white">Nice to meet you.</h4>
+              <a href="#" class="btn btn-brand">Reservation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--About-->
+  
+  <section>
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col col-lg-6">
+          <img src="./Assets/images/brick-wall-1834784__480.jpg" alt="">
+        </div>
+        <div class="col col-lg-6">
+          <h1>About Us</h1>
+          <div class="divider my-4"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+          <a href="#" class="btn btn-brand">Explore Menu</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Menu-->
+  
+  <section id="menu" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 intro-text">
+          <h1>
+            Explore Our Menu
+          </h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+            fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+            justo. Nullam dictum felis eu pede mollis pretium. </p>
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div class="container">
+      <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+            type="button" role="tab" aria-controls="pills-all" aria-selected="true">All Items</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-breakfast-tab" data-bs-toggle="pill" data-bs-target="#pills-breakfast"
+            type="button" role="tab" aria-controls="pills-breakfast" aria-selected="true">Breakfast</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch"
+            type="button" role="tab" aria-controls="pills-lunch" aria-selected="true">Lunch</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-dinner"
+            type="button" role="tab" aria-controls="pills-dinner" aria-selected="true">Dinner</button>
+        </li>
+
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+
+        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+          tabindex="0">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item1.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item2.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item3.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item4.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item5.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item6.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item7.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item8.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+
+        <div class="tab-pane fade show " id="pills-breakfast" role="tabpanel" aria-labelledby="pills-breakfast-tab"
+          tabindex="0">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item2.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item1.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item5.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item4.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+
+        </div>
+
+        <div class="tab-pane fade show " id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab"
+          tabindex="0">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item8.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item3.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item4.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item7.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+
+        <div class="tab-pane fade show " id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab"
+          tabindex="0">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item2.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item3.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item4.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./Assets/images/item6.jpg" alt="">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>
+                      Rated(5.4)
+                    </span>
+                    <span class="stars"> 
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+
+                  </div>
+                  <h5 class="mt-1 mb-2"><a href="#">FFFF</a></h5>
+                  <p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!--Reservation-->
+<section>
+  <section class="h-100 " style="background-color: #508586e0;">
+    <div class="container py-3 h-200 ">
+      <div class="row d-flex justify-content-center align-items-center h-200">
+        <div class="col-lg-8 col-xl-6">
+          <div class="card rounded-3">
+            <img src="./Assets/images/background1.jpg"
+              class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+              alt="Sample photo">
+            <div class="card-body p-4 p-md-5 text-center">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2 ">Book Your Table</h3>
+  
+              <form class="px-md-2">
+  
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example1q" class="form-control" placeholder="Full Name">
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example2q" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="date" id="form3Example3q" class="form-control">
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example4q" class="form-control" placeholder="Number of Persons">
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example5q" class="form-control" placeholder="Contact Number">
+                </div>
+                <div class="form-outline mb-4">
+                  <textarea name="" id="" cols="20" rows="4" class="form-control" placeholder="Any Message"></textarea>
+                </div>
+                <div class="container">
+                  <span>
+                    <p id="tt">**You will have to pay Rs100 for booking a table.</p>
+                  </span>
+                </div>
+  
+                <button type="submit" class="btn btn-success btn-lg mb-1">Book</button>
+  
+              </form>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+  
+
+  <!--Instagram Posts-->
+    <div class="row g-0">
+      <div class="col-lg-3 col-sm-4">
+        <div class="inta-posts">
+          <img src="./Assets/images/item1.jpg" alt="">
+          <a href="#"class="insta-btn">
+            <i class="ri-instagram-fill"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-8">
+        <div class="inta-posts">
+          <img src="./Assets/images/item2.jpg" alt="">
+          <a href="#"class="insta-btn">
+            <i class="ri-instagram-fill"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="inta-posts">
+          <img src="./Assets/images/item3.jpg"  alt="">
+          <a href="#"class="insta-btn">
+            <i class="ri-instagram-fill"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="inta-posts">
+          <img src="./Assets/images/item4.jpg"  alt="">
+          <a href="#"class="insta-btn">
+            <i class="ri-instagram-fill"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+ 
+  <!--Blog Post-->
+   <section id="blog">
+     <div class="container">
+       <div class="row">
+         <div class="col-12 intro-text">
+           <h1>Blog Posts</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+         </div>
+       </div>
+       <div class="row gy-4">
+         <div class="col-sm-6">
+          <div class="blog-post d-flex shadow-on-hover">
+            <img src="./Assets/images/item1.jpg" alt="">
+            <div class="blog-post-content p-4">
+              <p>Posted:24 Dec,2022</p>
+              <h4><a href="#">How to make delicious food</a></h4>
+              <p>abcdefghijkmnopqrstuvwxyz</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="blog-post d-flex shadow-on-hover">
+            <img src="./Assets/images/item2.jpg" alt="">
+            <div class="blog-post-content p-4">
+              <p>Posted:24 Dec,2022</p>
+              <h4><a href="#">How to make delicious food</a></h4>
+              <p>abcdefghijkmnopqrstuvwxyz</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="blog-post d-flex shadow-on-hover">
+            <img src="./Assets/images/item3.jpg" alt="">
+            <div class="blog-post-content p-4">
+              <p>Posted:24 Dec,2022</p>
+              <h4><a href="#">How to make delicious food</a></h4>
+              <p>abcdefghijkmnopqrstuvwxyz</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="blog-post d-flex shadow-on-hover">
+            <img src="./Assets/images/item4.jpg" alt="">
+            <div class="blog-post-content p-4">
+              <p>Posted:24 Dec,2022</p>
+              <h4><a href="#">How to make delicious food</a></h4>
+              <p>abcdefghijkmnopqrstuvwxyz</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="blog-post d-flex shadow-on-hover">
+            <img src="./Assets/images/item5.jpg" alt="">
+            <div class="blog-post-content p-4">
+              <p>Posted:24 Dec,2022</p>
+              <h4><a href="#">How to make delicious food</a></h4>
+              <p>abcdefghijkmnopqrstuvwxyz</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="blog-post d-flex shadow-on-hover">
+            <img src="./Assets/images/item6.jpg" alt="">
+            <div class="blog-post-content p-4">
+              <p>Posted:24 Dec,2022</p>
+              <h4><a href="#">How to make delicious food</a></h4>
+              <p>abcdefghijkmnopqrstuvwxyz</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-cover">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+               <h1 class="text-white">ZYKAA</h1>
+                <p>Lorem ixjijk osjxioj skxndmklwm skxmkdcnemx djedncckdwm dkeomdklwm dnekmlwddxlkcne.</p>
+                <div class="social-links">
+                  <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                  <a href="#"><i class="ri-instagram-fill"></i></a>
+                  <a href="#"><i class="ri-youtube-fill"></i></a>
+                  <a href="#"><i class="ri-google-play-fill"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-3 ms-auto">
+                <h6 class="text-white">CONTACT</h6>
+                <p class="mb-1">P:(03) 32573683</p>
+                <p class="mb-1">E: emailbfjsnks</p>
+                <p class="mb-1">A:nkjnkjndlkmlmalsml;</p>
+              </div>
+              <div class="col-lg-3">
+                <h6 class="text-white">OPENING HOURS</h6>
+                <p class="mb-1">P:(03) 32573683</p>
+                <p class="mb-1">E: emailbfjsnks</p>
+                <p class="mb-1">A:nkjnkjndlkmlmalsml;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <p class="mb-0">
+                  Copyright all rights reserved.
+                </p>
+              </div>
+                <div class="col-auto">
+                  <p class="mb-0">
+                    Designed by<a href="#"> Geetika</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

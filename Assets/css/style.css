@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+body {
+   font-family: "Tilt Neon";
+   color: #777;
+   line-height: 1.8;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:600;
+    color:#222;
+
+}
+a{
+    color: #222;
+    text-decoration: none;
+    transition:all 0.4s;
+    font-weight:600;
+}
+a:hover{
+    color:#027074;
+
+}
+img{
+    width: 90%;
+    
+}
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.shadow-on-hover{
+    transition: all 0.2s;
+}
+.shadow-on-hover:hover{
+    box-shadow:  0 10px 40px rgba(0,0,0,0.1);
+}
+/* button*/
+.btn {
+    border:0;
+    padding: 14px 38px;
+}
+.btn-brand{
+    background-color:rgb(4, 169, 175);
+    color:#fff;
+    font-weight: 500;
+    border-color:#04a9af;
+}
+.btn-brand:hover{
+      background-color: #027074;
+      border-color: #027074;
+      color:#fff;
+}
+.bg-cover{
+    background-position: center !important;
+    background-size:cover !important;
+    background-repeat: no-repeat !important;
+}
+/*slide*/
+.slide-1{
+     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/restaurant-interior.jpg);
+}
+.slide-2{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/brick-wall-1834784__480.jpg);
+}
+#heroSlider h6::after,
+#heroSlider h6::before{
+     content:" ";
+     width: 40px;
+     height: 4px;
+     background-color: #ffffff;
+     display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+.carousel-control-prev,
+.carousel-control-next{
+     background-color: rgba(0,0,0,0.6);
+     width: 40px;
+     height: 70px;
+     margin: auto;
+}
+/*About*/
+#about .divider{
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: #04a9af;
+}
+/*Intro-text*/
+.intro-text {
+margin-bottom: 40px;
+text-align: center;
+}
+
+.intro-text p {
+    max-width: 500px;
+    margin: 10px auto 0 auto;
+}
+
+/*menu*/
+#menu .nav-pills .nav-link{
+    background-color:#ffffff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+#menu .nav-pills .nav-link.active{
+    background-color: #02a3a8;
+    color: #fff;
+}
+.menu-item .stars{
+    color: #027074;
+}
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+/* insta posts*/
+.insta-post{
+    position: relative;
+    overflow: hidden;
+}
+.insta-post .insta-btn{
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%,-50%);
+    opacity:0;
+}
+.insta-post img{
+    transition: all 0.4s;
+}
+.insta-post:hover img{
+      transform: scale(1.2);
+}
+.insta-post:hover .insta-btn{
+       opacity:1;
+
+}
+/*Blog Post*/
+.blog-post img{
+    width:30%;
+    object-fit: cover;
+}
+@media (max-width: 760px) {
+    .blog-post{
+        flex-direction: column;
+    }
+    .blog-post img{
+        width: 100px;
+    }
+}
+
+/*Footer*/
+footer{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/restaurant-interior.jpg);
+     padding-top: 120px;
+     padding-bottom: 30px;
+}
+.footer-top{
+    margin-bottom: 30px;
+
+}
+footer p,
+footer a{
+    color: rgba(255,255,255,0.75);
+}
+footer .social-links a{
+    font-weight: normal;
+    font-size: 24px;
+    margin-right: 10px;
+}
+footer img{
+    max-width: 175px;
+}
+.footer-bottom{
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.4);
+}}
